@@ -34,7 +34,17 @@ android {
         viewBinding true
     }
 
-
+    flavorDimensions  "producers"
+    productFlavors {
+        producerMadBrains {
+            dimension "producers"
+            applicationId "ru.madbrains.android"
+        }
+        producerIrlix {
+            dimension "producers"
+            applicationId "ru.irlix.android"
+        }
+    }
 }
 
 dependencies {
